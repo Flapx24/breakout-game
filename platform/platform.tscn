@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://isf6xten4rwy"]
+
+[ext_resource type="Texture2D" uid="uid://bc7yvi25hn1b6" path="res://assets/platforms/main.png" id="1_mi635"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mi635"]
+radius = 64.0
+height = 486.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.6, 0.6)
+
+[node name="Platform" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_mi635")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.5708
+scale = Vector2(0.6, 0.6)
+shape = SubResource("CapsuleShape2D_mi635")

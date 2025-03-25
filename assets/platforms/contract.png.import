@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baa1g2iff5gkl"
-path="res://.godot/imported/7.png-9dc1e91270a213fda2c2871aa66683c0.ctex"
+uid="uid://c46jr3wvilcmr"
+path="res://.godot/imported/contract.png-e8d52d7d4f8da598cfcda93bd9bb319e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bricks/7.png"
-dest_files=["res://.godot/imported/7.png-9dc1e91270a213fda2c2871aa66683c0.ctex"]
+source_file="res://assets/platforms/contract.png"
+dest_files=["res://.godot/imported/contract.png-e8d52d7d4f8da598cfcda93bd9bb319e.ctex"]
 
 [params]
 
