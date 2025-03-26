@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c46jr3wvilcmr"
-path="res://.godot/imported/contract.png-e8d52d7d4f8da598cfcda93bd9bb319e.ctex"
+uid="uid://bf45nxrvswqyc"
+path="res://.godot/imported/expand.png-b5d4350e7af98850801e7fdc7ec18838.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platforms/contract.png"
-dest_files=["res://.godot/imported/contract.png-e8d52d7d4f8da598cfcda93bd9bb319e.ctex"]
+source_file="res://assets/paddles/expand.png"
+dest_files=["res://.godot/imported/expand.png-b5d4350e7af98850801e7fdc7ec18838.ctex"]
 
 [params]
 
