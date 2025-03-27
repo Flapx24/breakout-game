@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5mvge1h8x421"]
+
+[ext_resource type="Texture2D" uid="uid://bibc4dr53ufg5" path="res://assets/menu/buttons/Play/Default@3x.png" id="1_lgp46"]
+[ext_resource type="Texture2D" uid="uid://bet7nkp3f4hs4" path="res://assets/menu/buttons/Home/Default@3x.png" id="2_5ijvr"]
+[ext_resource type="Texture2D" uid="uid://caid3ic2mufpo" path="res://assets/menu/buttons/Repeat/Default@3x.png" id="3_yvytn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rl6v5"]
+bg_color = Color(0, 0, 0, 0.509804)
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Panel" type="Panel" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rl6v5")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -181.0
+offset_top = -420.0
+offset_right = 181.0
+offset_bottom = -249.0
+theme_override_colors/font_color = Color(0.752941, 0.0901961, 0.25098, 1)
+theme_override_font_sizes/font_size = 125
+text = "Pause"
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 194.0
+offset_top = -124.0
+offset_right = 442.0
+offset_bottom = 124.0
+icon = ExtResource("1_lgp46")
+
+[node name="Restart" type="Button" parent="."]
+layout_mode = 0
+offset_left = -124.0
+offset_top = -124.0
+offset_right = 124.0
+offset_bottom = 124.0
+icon = ExtResource("3_yvytn")
+
+[node name="Home" type="Button" parent="."]
+layout_mode = 0
+offset_left = -442.0
+offset_top = -124.0
+offset_right = -194.0
+offset_bottom = 124.0
+icon = ExtResource("2_5ijvr")

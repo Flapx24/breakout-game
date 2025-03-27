@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnyhy7iysmi0c"]
+
+[ext_resource type="Texture2D" uid="uid://qh2b4ps46ckg" path="res://assets/menu/buttons/play_text/Default@3x.png" id="1_chmv6"]
+[ext_resource type="Script" uid="uid://dnea72jtule7f" path="res://menu/main_menu.gd" id="1_f5okj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5w3e"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_f5okj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -278.0
+offset_top = -420.0
+offset_right = 279.0
+offset_bottom = -249.0
+theme_override_colors/font_color = Color(0.752941, 0.0901961, 0.25098, 1)
+theme_override_font_sizes/font_size = 125
+text = "Breakout"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -144.0
+offset_top = -72.0
+offset_right = 336.0
+offset_bottom = 168.0
+scale = Vector2(0.6, 0.6)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o5w3e")
+icon = ExtResource("1_chmv6")
+icon_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
