@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ci453e7neocf"]
+[gd_scene load_steps=6 format=3 uid="uid://ci453e7neocf"]
 
 [ext_resource type="PackedScene" uid="uid://isf6xten4rwy" path="res://paddle/paddle.tscn" id="1_0f027"]
+[ext_resource type="PackedScene" uid="uid://bfdjed5vuxpgw" path="res://ball/ball.tscn" id="2_2c62f"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0f027"]
 distance = -540.0
@@ -40,3 +41,6 @@ shape = SubResource("WorldBoundaryShape2D_2c62f")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
 rotation = -1.5708
 shape = SubResource("WorldBoundaryShape2D_gyfs4")
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_2c62f")]
+position = Vector2(0, 400)

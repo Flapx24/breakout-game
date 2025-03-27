@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cfeveg7plto18"]
+[gd_scene load_steps=3 format=3 uid="uid://cfeveg7plto18"]
 
 [ext_resource type="PackedScene" uid="uid://ci453e7neocf" path="res://main_scene.tscn" id="1_b3oru"]
 [ext_resource type="PackedScene" uid="uid://0qmyiffywqvo" path="res://brick/brick.tscn" id="2_ua5ty"]
-[ext_resource type="PackedScene" uid="uid://bfdjed5vuxpgw" path="res://ball/ball.tscn" id="3_61w3m"]
 
 [node name="Level1" type="Node2D"]
 
@@ -169,6 +168,3 @@ position = Vector2(408, -456)
 
 [node name="Brick63" parent="." instance=ExtResource("2_ua5ty")]
 position = Vector2(816, -456)
-
-[node name="RigidBody2D" parent="." instance=ExtResource("3_61w3m")]
-position = Vector2(0, 400)

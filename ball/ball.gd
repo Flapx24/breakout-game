@@ -2,10 +2,9 @@ extends RigidBody2D
 
 var speed = 400
 
-# Dirección de movimiento inicial
-var direction = Vector2(1, -1)
-
 func _ready():
+	var direction_x = [-1, 1].pick_random()
+	var direction = Vector2(direction_x, -1)
 	linear_velocity = direction.normalized() * speed
 
 func _physics_process(delta):
