@@ -11,6 +11,7 @@ bounce = 1.0
 radius = 64.0
 
 [node name="Ball" type="RigidBody2D"]
+collision_mask = 10
 physics_material_override = SubResource("PhysicsMaterial_pwunn")
 gravity_scale = 0.0
 script = ExtResource("1_pwunn")

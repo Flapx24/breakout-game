@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ci453e7neocf"]
+[gd_scene load_steps=8 format=3 uid="uid://ci453e7neocf"]
 
 [ext_resource type="PackedScene" uid="uid://isf6xten4rwy" path="res://paddle/paddle.tscn" id="1_0f027"]
+[ext_resource type="Script" uid="uid://ba78swpn11awr" path="res://level_controller.gd" id="1_gyfs4"]
 [ext_resource type="PackedScene" uid="uid://bfdjed5vuxpgw" path="res://ball/ball.tscn" id="2_2c62f"]
+[ext_resource type="Script" uid="uid://lxpokabeqfu" path="res://static_body_2d.gd" id="3_d5x1h"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0f027"]
 distance = -540.0
@@ -13,32 +15,39 @@ distance = -960.0
 distance = -960.0
 
 [node name="Main scene" type="Node2D"]
+process_mode = 1
+script = ExtResource("1_gyfs4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Paddle" parent="." instance=ExtResource("1_0f027")]
 position = Vector2(0, 500)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="BottomBoundary" type="StaticBody2D" parent="."]
+collision_layer = 2
+script = ExtResource("3_d5x1h")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomBoundary"]
 shape = SubResource("WorldBoundaryShape2D_0f027")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="TopBoundary" type="StaticBody2D" parent="."]
 rotation = 3.14159
+collision_layer = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopBoundary"]
 shape = SubResource("WorldBoundaryShape2D_0f027")
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+[node name="LeftBoundary" type="StaticBody2D" parent="."]
+collision_layer = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBoundary"]
 rotation = 1.5708
 shape = SubResource("WorldBoundaryShape2D_2c62f")
 
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+[node name="RigthBoundary" type="StaticBody2D" parent="."]
+collision_layer = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigthBoundary"]
 rotation = -1.5708
 shape = SubResource("WorldBoundaryShape2D_gyfs4")
 
