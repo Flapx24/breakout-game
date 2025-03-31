@@ -13,8 +13,6 @@ func _ready() -> void:
 	if sprite and textures.size() > 0:
 		sprite.texture = textures[randi() % textures.size()]
 
-	$DetectionArea.body_entered.connect(_on_detection_area_body_entered)
-
 func _on_detection_area_body_entered(body):
 	if body is RigidBody2D:
 		queue_free()

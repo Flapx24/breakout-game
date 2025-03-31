@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Breakout"
+run/main_scene="uid://clmk21t3somgw"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -45,4 +46,5 @@ Escape={
 
 [rendering]
 
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

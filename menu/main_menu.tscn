@@ -30,6 +30,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_f5okj")
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = -278.0
 offset_top = -420.0
 offset_right = 279.0
@@ -40,6 +41,7 @@ text = "Breakout"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = -144.0
 offset_top = -72.0
 offset_right = 336.0
